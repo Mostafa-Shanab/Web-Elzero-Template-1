@@ -1,0 +1,137 @@
+/* Start Variables */
+:root {
+    --primary-color: #10CAB7;
+    --secondary-color: #2ecc71;
+    --font-size-large: 24px;
+    --spacing-unit: 8px;
+    --max-width: 1200px;
+}
+
+/* End Variables */
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+/* End Global Rules */
+/* Start Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.header img {
+    width: 100px;
+}
+
+.header i {
+    font-size: 30px;
+}
+
+/* End Header */
+
+/* Start first section */
+.first-section {
+    text-align: center;
+    height: 25vh;
+    background: url('../images/mountain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.first-section h1 {
+    color: var(--primary-color);
+}
+
+.first-section p {
+    color: white;
+}
+
+/* End first section */
+
+/* Start Second section */
+.second-section {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 155px;
+}
+
+.second-section i {
+    color: var(--primary-color);
+    font-size: 55px;
+}
+
+.second-section p {
+    line-height: 2;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+/* Large */
+@media (max-width: 1200px) {
+    .second-section {
+        gap: 105px;
+    }
+}
+
+/* Medium */
+@media (max-width: 992px) {
+    .second-section {
+        gap: 55px;
+    }
+}
+
+/* Small */
+@media (max-width: 768px) {
+    .second-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .second-section p {
+        display: none;
+    }
+}
+
+/* End Second section */
+
+/* Start Common Use */
+.common-label {
+    text-align: center;
+}
+
+.common-label p:first-of-type {
+    font-size: 100px;
+    font-weight: 800;
+    color: #e1e0e0;
+}
+
+.common-label p:first-of-type+p {
+    margin-top: -138px;
+}
+
+/* End Common Use */
+
+/* Start Services section */
+
+/* End Services section */
